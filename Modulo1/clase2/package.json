@@ -1,0 +1,27 @@
+{
+  "name": "clase2",
+  "version": "1.0.0",
+  "description": "primera clase practica del curso de node de digital house",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Comrak/CursoDigitalHouse.git"
+  },
+  "keywords": [
+    "curso",
+    "digital",
+    "house",
+    "node",
+    "js",
+    "development"
+  ],
+  "author": "Jose Nardulli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Comrak/CursoDigitalHouse/issues"
+  },
+  "homepage": "https://github.com/Comrak/CursoDigitalHouse#readme"
+}

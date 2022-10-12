@@ -25,3 +25,9 @@ app.get('/register.html',(req,res)=>{
 app.get('/login.html',(req,res)=>{
     res.sendFile(path.resolve('views/login.html'))
 })
+app.post('/regform.html',(req,res)=>{
+    res.sendFile(path.resolve('views/home.html'))
+})
+app.post('/loginform.html',(req,res)=>{
+    res.sendFile(path.resolve('views/home.html'))
+})

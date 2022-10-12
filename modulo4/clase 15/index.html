@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post"></form>
+    <label for="nombre">colocation su nombretion aqui: </label>
+    <input type="text" name="nombre" id="nombre"><br>
+    <label for="email">ingresation emailation: </label>
+    <input type="email" name="email" id="email"><br>
+    <label for="password">passwordrization: </label>
+    <input type="password" name="password" id="password"><br>
+    <input type="button" value="enviar">
+
+    <!-- Una etiqueta <input> para que el usuario ingrese su nombre.
+    Una etiqueta <input> para que el usuario ingrese su e-mail.
+    Una etiqueta <input> para que el usuario ingrese su contraseña.
+    Una etiqueta <label> para cada uno de los <input>. -->
+
+<!-- Los tres <input> deberán tener el atributo name declarado, con los valores nombre, email y password para que la información efectivamente viaje al enviar el formulario. -->
+
+<!-- Crear un <label> con el texto "¿Tenés mascota?".
+    Agregar dos radio-button para darle la opción "Sí" y la opción "No".
+    Configurar el atributo name="mascota" en ambos <input> para que asocie que estamos hablando del mismo campo.
+
+Atención: Para poder averiguar, luego, qué es lo que eligió el usuario, no debemos olvidarnos de agregarle el atributo value a cada <input>.
+ -->
+
+ <label for="mascota">¿Tenés mascota?: </label>
+ <input type="radio" name="macota" id="macota" value="si">SI
+ <input type="radio" name="macota" id="macota" value="no">NO
+
+ <!-- Para eso, dentro del formulario ya declarado, debemos:
+
+    Crear un <label> con el texto "¿Cuáles son tus hobbies?".
+    Crear tres etiquetas <input> de tipo checkbox con las opciones: Pescar, Correr y Yoga.
+    Configurar el atributo name="hobby" a todos los <input> para que asocie que estamos hablando del mismo campo.
+
+Por último, no debemos olvidarnos de agregar el atributo value a cada <input> para poder averiguar luego qué es lo que eligió el usuario. -->
+        <label for="hobby">¿Cuáles son tus hobbies?</label>
+        <input type="checkbox" name="hobby" id="hobby" value="Pescar">Pescar
+        <input type="checkbox" name="hobby" id="hobby" value="Correr">Correr
+        <input type="checkbox" name="hobby" id="hobby" value="Yoga">Yoga
+
+<!-- 
+        Para eso, deberemos crear una etiqueta <select> con atributo y valor name="mes". Dentro del <select>, tendremos que crear 12 etiquetas <option>, una por cada mes, aclarando en cada caso el texto que leerá el usuario: Enero, Febrero, Marzo, etc.
+
+            No olvidemos, además, escribir el atibuto value en cada una de las etiquetas <option>. Pero ¡atención!, queremos que, como valor, ese atributo tenga el número del mes al que está representando. Por ejemplo: 1 para Enero, 2 para Febrero, y así... -->
+
+<select name="mes" id="mes">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+</select>
+<!-- Para eso, debemos agregar, en el formulario que ya está declarado, la etiqueta que le permite al usuario escribir un comentario.
+
+Además, deberemos crear dos etiquetas <button>, configurando el atributo type según corresponda, para que el usuario pueda ver un botón que diga "Enviar" y otro que diga "Borrar", que al hacerle click borre lo que ya escribió. -->
+
+<form action="#" method="post">
+   <textarea name="comentario" id="comentario" cols="30" rows="10">
+
+   </textarea><br>
+   <button type="submit">Enviar</button>
+   <button type="reset">Borrar</button>
+
+</form>
+</body>
+</html>

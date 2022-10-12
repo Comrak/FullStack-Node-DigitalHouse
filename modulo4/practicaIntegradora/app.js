@@ -18,3 +18,10 @@ app.listen(numeroPuerto,(error)=>{
 app.get('/',(req,res)=>{
     res.sendFile(path.resolve('views/home.html'))
 })
+//ruta a registro
+app.get('/register.html',(req,res)=>{
+    res.sendFile(path.resolve('views/register.html'))
+})
+app.get('/login.html',(req,res)=>{
+    res.sendFile(path.resolve('views/login.html'))
+})

@@ -7,12 +7,12 @@ const app = express()
 const PUBLICFOLDER = path.resolve('public')
 app.use(express.static(PUBLICFOLDER))
 //escuchamos un puerto 
-const numeroPuerto = 3030
+const numeroPuerto = process.env.PORT || 3001;
 app.listen(numeroPuerto,(error)=>{
     if(error){
         return console.log('error',error)
     }
-    console.log('servidor levantado en 3030')
+    console.log('servidor levantado en '+ numeroPuerto)
 })
 // RUTAS
 app.get('/',(req,res)=>{
